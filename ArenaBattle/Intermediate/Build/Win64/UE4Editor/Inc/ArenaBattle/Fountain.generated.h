@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARENABATTLE_Fountain_generated_h
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_SPARSE_DATA
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_RPC_WRAPPERS
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_INCLASS_NO_PURE_DECLS \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_SPARSE_DATA
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_RPC_WRAPPERS
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFountain(); \
 	friend struct Z_Construct_UClass_AFountain_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AFountain)
 
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_INCLASS \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAFountain(); \
 	friend struct Z_Construct_UClass_AFountain_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AFountain)
 
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_STANDARD_CONSTRUCTORS \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFountain(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFountain) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_ENHANCED_CONSTRUCTORS \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFountain(AFountain&&); \
@@ -58,28 +58,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFountain); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFountain)
 
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_PRIVATE_PROPERTY_OFFSET
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_9_PROLOG
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_GENERATED_BODY_LEGACY \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__RotateSpeed() { return STRUCT_OFFSET(AFountain, RotateSpeed); }
+
+
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_11_PROLOG
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_PRIVATE_PROPERTY_OFFSET \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_SPARSE_DATA \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_RPC_WRAPPERS \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_INCLASS \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_STANDARD_CONSTRUCTORS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_PRIVATE_PROPERTY_OFFSET \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_SPARSE_DATA \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_RPC_WRAPPERS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_INCLASS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ArenaBattle_Source_ArenaBattle_Fountain_h_12_GENERATED_BODY \
+#define ArenaBattle_Source_ArenaBattle_Fountain_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_PRIVATE_PROPERTY_OFFSET \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_SPARSE_DATA \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_INCLASS_NO_PURE_DECLS \
-	ArenaBattle_Source_ArenaBattle_Fountain_h_12_ENHANCED_CONSTRUCTORS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_PRIVATE_PROPERTY_OFFSET \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_SPARSE_DATA \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_INCLASS_NO_PURE_DECLS \
+	ArenaBattle_Source_ArenaBattle_Fountain_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
