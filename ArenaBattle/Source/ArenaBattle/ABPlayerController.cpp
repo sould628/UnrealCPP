@@ -11,3 +11,10 @@ void AABPlayerController::PostInitializeComponents()
 	Super::PostInitializeComponents();
 	ABLOG_S(Warning);
 }
+
+void AABPlayerController::BeginPlay() {
+	Super::BeginPlay();
+
+	FInputModeGameOnly InputMode;
+	SetInputMode(InputMode);
+}

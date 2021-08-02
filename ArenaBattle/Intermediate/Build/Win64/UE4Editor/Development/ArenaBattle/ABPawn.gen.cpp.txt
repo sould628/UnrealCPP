@@ -187,4 +187,6 @@ C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/FloatingPawnMovement.h
+C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\FloatingPawnMovement.generated.h
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABPawn.generated.h
