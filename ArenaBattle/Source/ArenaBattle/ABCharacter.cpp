@@ -33,7 +33,7 @@ AABCharacter::AABCharacter()
 	SetControlMode(EControlMode::DIABLO);
 
 	ArmLengthSpeed = 3.0f;
-	ArmRotationSpeed = 0.0000001f;
+	ArmRotationSpeed = 10.0f;
 }
 
 // Called when the game starts or when spawned
@@ -182,13 +182,15 @@ void AABCharacter::ViewChange()
 {
 	switch (CurrentControlMode) {
 	case EControlMode::GTA:
-		SetControlMode(EControlMode::DIABLO);
+		SpringArm->SetRelativeRotation(GetController()->GetControlRotation());
 		GetController()->SetControlRotation(GetActorRotation());
+		SetControlMode(EControlMode::DIABLO);
 		break;
 
 	case EControlMode::DIABLO:
-		SetControlMode(EControlMode::GTA);
+
 		GetController()->SetControlRotation(SpringArm->GetRelativeRotation());
+		SetControlMode(EControlMode::GTA);
 		break;
 	}
 }
