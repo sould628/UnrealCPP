@@ -35,6 +35,7 @@ protected:
 	float ArmLengthSpeed = 0.0f;
 	float ArmRotationSpeed = 0.0f;
 
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -34,6 +34,7 @@ AABCharacter::AABCharacter()
 
 	ArmLengthSpeed = 3.0f;
 	ArmRotationSpeed = 10.0f;
+	GetCharacterMovement()->JumpZVelocity = 800.0f;
 }
 
 // Called when the game starts or when spawned
@@ -106,7 +107,6 @@ void AABCharacter::Tick(float DeltaTime)
 
 	switch (CurrentControlMode) {
 	case EControlMode::DIABLO:
-		ABLOG(Warning, TEXT("GetRelativeRotaiton: %s"), *SpringArm->GetRelativeRotation().ToString());
 		const auto rot = FMath::RInterpTo(SpringArm->GetRelativeRotation(), ArmRotationTo, DeltaTime, ArmRotationSpeed);
 		//ABLOG(Warning, TEXT("rot: %s"), *rot.ToString());
 		SpringArm->SetRelativeRotation(rot);
@@ -129,6 +129,7 @@ void AABCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	PlayerInputComponent->BindAction(TEXT("ViewChange"), EInputEvent::IE_Pressed, this, &AABCharacter::ViewChange);
+	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AABCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &AABCharacter::LeftRight);
