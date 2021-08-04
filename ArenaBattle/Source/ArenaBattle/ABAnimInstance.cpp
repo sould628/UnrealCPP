@@ -6,6 +6,10 @@
 UABAnimInstance::UABAnimInstance() {
 	CurrentPawnSpeed = 0.0f;
 	IsInAir = false;
+	static ConstructorHelpers::FObjectFinder<UAnimMontage> ATTACK_MONTAGE(TEXT("AnimMontage'/Game/Animations/SK_Mannequin_Skeleton_Montage.SK_Mannequin_Skeleton_Montage'"));
+	if (ATTACK_MONTAGE.Succeeded()) {
+		AttackMontage = ATTACK_MONTAGE.Object;
+	}
 }
 
 void UABAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
@@ -20,4 +24,28 @@ void UABAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 			IsInAir = Character->GetMovementComponent()->IsFalling();
 		}
 	}
+}
+
+void UABAnimInstance::PlayAttackMontage() {
+	Montage_Play(AttackMontage, 1.0f);
+}
+
+void UABAnimInstance::JumpToAttachMontageSection(int32 NewSection)
+{
+	ABCHECK(Montage_IsPlaying(AttackMontage));
+	Montage_JumpToSection(GetAttackMontageSectionName(NewSection), AttackMontage);
+}
+
+void UABAnimInstance::AnimNotify_AttackHitCheck()
+{
+	OnAttackHitCheck.Broadcast();
+}
+
+void UABAnimInstance::AnimNotify_NextAttackCheck() {
+	OnNextAttackCheck.Broadcast();
+}
+
+FName UABAnimInstance::GetAttackMontageSectionName(int32 Section) {
+	ABCHECK(FMath::IsWithinInclusive<int32>(Section, 1, 4), NAME_None);
+	return FName(*FString::Printf(TEXT("Attack%d"), Section));
 }

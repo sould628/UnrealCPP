@@ -187,3 +187,5 @@ C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\G
 C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABCharacter.generated.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\ABAnimInstance.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABAnimInstance.generated.h
