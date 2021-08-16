@@ -53,6 +53,16 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 		UCameraComponent* Camera;
 
+	bool CanSetWeapon();
+	void SetWeapon(class AABWeapon* NewWeapon);
+
+	UPROPERTY(VisibleAnywhere, Category = Weapon)
+		class AABWeapon* CurrentWeapon;
+
+	//UPROPERTY(VisibleAnywhere, Category = Weapon)
+	//	USkeletalMeshComponent* Weapon;
+
+
 private:
 	void UpDown(float NewAxisValue);
 	void LeftRight(float NewAxisValue);

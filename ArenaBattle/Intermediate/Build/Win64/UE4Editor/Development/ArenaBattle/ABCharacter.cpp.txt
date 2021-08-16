@@ -189,4 +189,6 @@ C:\Program Files\EpicGames\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABCharacter.generated.h
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\ABAnimInstance.h
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABAnimInstance.generated.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\ABWeapon.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle\ABWeapon.generated.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
