@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "ABCharacter.generated.h"
 
+DECLARE_MULTICAST_DELEGATE(FOnAttackEndDelegate);
+
 UCLASS()
 class ARENABATTLE_API AABCharacter : public ACharacter
 {
@@ -21,7 +23,8 @@ protected:
 
 	enum class EControlMode {
 		GTA,
-		DIABLO
+		DIABLO,
+		NPC
 	};
 
 	//void SetControlMode(int32 ControlMode);
@@ -47,6 +50,8 @@ public:
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
+	virtual void PossessedBy(AController* NewController) override;
+
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 		USpringArmComponent* SpringArm;
 
@@ -67,7 +72,8 @@ public:
 
 	//UPROPERTY(VisibleAnywhere, Category = Weapon)
 	//	USkeletalMeshComponent* Weapon;
-
+	void Attack();
+	FOnAttackEndDelegate OnAttackEnd;
 
 private:
 	void UpDown(float NewAxisValue);
@@ -76,7 +82,7 @@ private:
 	void Turn(float NewAxisValue);
 
 	void ViewChange();
-	void Attack();
+
 
 	UFUNCTION()
 		void OnAttackMontageEnded(UAnimMontage* Montage, bool bInterrupted);
@@ -109,4 +115,6 @@ private:
 
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
 		float AttackRadius;
+
+
 };
