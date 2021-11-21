@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "ArenaBattle/BTDecorator_IsInAttackRange.h"
+#include "ArenaBattle/Public/BTDecorator_IsInAttackRange.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeBTDecorator_IsInAttackRange() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTDecorator_IsInAttackRange_Statics::Class_MetaDataParams[] = {
 		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "BTDecorator_IsInAttackRange.h" },
-		{ "ModuleRelativePath", "BTDecorator_IsInAttackRange.h" },
+		{ "ModuleRelativePath", "Public/BTDecorator_IsInAttackRange.h" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTDecorator_IsInAttackRange_Statics::StaticCppClassTypeInfo = {
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeBTDecorator_IsInAttackRange() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UBTDecorator_IsInAttackRange, 2839860093);
+	IMPLEMENT_CLASS(UBTDecorator_IsInAttackRange, 37463286);
 	template<> ARENABATTLE_API UClass* StaticClass<UBTDecorator_IsInAttackRange>()
 	{
 		return UBTDecorator_IsInAttackRange::StaticClass();

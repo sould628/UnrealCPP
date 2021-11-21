@@ -32,6 +32,7 @@
 /wd4244
 /wd4838
 /I .
+/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\Private"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -230,8 +231,11 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle"
+/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattleSetting"
 /I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source"
+/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattleSetting\Public"
+/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle"
+/I "E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\Public"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -255,7 +259,7 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.30.30401\INCLUDE"
+/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
@@ -264,7 +268,7 @@
 /FI"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Yu"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\ArenaBattleEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\ABCharacter.cpp"
+"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\Private\ABCharacter.cpp"
 /FI"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h"
 /Fo"E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\ABCharacter.cpp.obj"
 /TP

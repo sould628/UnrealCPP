@@ -1,8 +1,8 @@
 E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle\Definitions.ArenaBattle.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle/ABItemBox.h
-E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\ArenaBattle.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle/Public/ABItemBox.h
+E:\document\Unreal Projects\UnrealCPP\ArenaBattle\Source\ArenaBattle\Public\ArenaBattle.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Engine\Public\EngineMinimal.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 C:\Program Files\EpicGames\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\CoreUObject.h
